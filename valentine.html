@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+  <style>
+    body{
+      background-color: rgb(252, 216, 222);
+    }
+    .heart{
+      position: absolute;
+      top: 50px;
+      left: 508px;
+      height: 500px;
+      width: 500px;
+    }
+    .letter{
+      /* padding: 40px; */
+      border:5px dotted rgb(248, 212, 5);
+      /* padding: 20px; */
+      text-align: center;
+      font-size: 25px;
+      font-family: 'Dancing Script', cursive;      
+      z-index: -2;
+      position: absolute;
+      top: 200px;
+      left: 15px;
+      height: 200px;
+      width: 270px;
+      background-color: rgb(252, 249, 220);
+      transition: all 1s ease-in;
+    }
+    @keyframes float{
+      0%{
+        top: 50%;
+      }
+      50%{
+        top: 40%;
+      }
+      100%{
+        top: 50%;
+      }
+    }
+    .envelope:hover .letter{
+      top: 45px;
+    }
+    .envelope{
+      position: absolute;
+      /* background-color: rgba(255, 0, 0, 0.444); */
+      height: 400px;
+      width: 300px;
+      transform: translate(-50%,-50%);
+      left: 50%;
+      top: 50%;
+      overflow: hidden;
+      animation: float 5s infinite;
+
+    }
+    .square{
+      z-index: -3;
+      position: absolute;
+      top: 190px;
+      height: 300px;
+      width: 300px;
+      background-color: rgb(227, 161, 172);
+    }
+    .tri1{
+      position: absolute;
+      top: 50px;
+      /* z-index: -1; */
+      left: -700px;
+      border-left: 500px solid transparent;
+      border-right:500px solid transparent;
+      border-bottom:350px solid rgba(255, 184, 196, 0.992);
+    }
+    .tri2{
+      z-index: -1;
+      position: absolute;
+      left: 0px;
+      top: 50px;
+      border-left: 500px solid transparent;
+      border-right:500px solid transparent;
+      border-bottom:350px solid rgb(249, 171, 184);
+    }
+    .tri3{
+      z-index: -3;
+      position: absolute;
+      left: -1px;
+      top: 41px;
+      border-left: 151px solid transparent;
+      border-right:151px solid transparent;
+      border-bottom:150px solid rgb(227, 161, 172);
+      /* border-radius: 500px; */
+    }
+  </style>
+</head>
+<body>
+  <!-- <img src="https://icons8.com/icon/zkTZNXGR64dz/heart-suit"> -->
+  <audio controls preload="auto">
+    <!-- <source src="horse.ogg" type="audio/ogg"> -->
+    <source src="Chaudhary(PaglaSongs).mp3" loop="loop" autoplay="autoplay">
+    <!-- Your browser does not support the audio element. -->
+  </audio>
+  <img class="heart" src="260842010many-little-heart-make-big-heart-gif.gif">
+  <div class="envelope">
+    <div class="letter">
+     <div class="lett"><p>Happy Valentine's Day Love</p><p> </p>
+      <img src="https://img.icons8.com/color/48/null/filled-like.png"/>    </div>
+    </div>
+    <div class="square"></div>
+    <div class="tri1"></div>
+    <div class="tri2"></div>
+    <div class="tri3"></div>
+  </div>
+  
+</body>
+</html>
